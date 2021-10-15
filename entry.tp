@@ -7,6 +7,7 @@
     "colorDark": "#25274c",
     "colorLight": "#707ab5"
   },
+  "plugin_start_cmd": "%TP_PLUGIN_FOLDER%TwitchExtras\\nothing.exe",
   "categories": [
     {
       "id": "gitago.twitchextras.main",
