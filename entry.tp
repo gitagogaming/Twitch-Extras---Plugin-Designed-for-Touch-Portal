@@ -1,0 +1,1125 @@
+{
+  "sdk": 3,
+  "version": 100,
+  "name": "Gitago Twitch Extras",
+  "id": "gitago.twitchextras",
+  "configuration": {
+    "colorDark": "#25274c",
+    "colorLight": "#707ab5"
+  },
+  "plugin_start_cmd": "%TP_PLUGIN_FOLDER%TwitchExtras\\nothing.exe",
+  "categories": [
+    {
+      "id": "gitago.twitchextras.main",
+      "name": "TE | Twitch Extras \ud83d\udcbb",
+      "actions": [
+        {
+          "id": "gitago.twitchextras.act.prediction.start",
+          "name": "Predictions: Set",
+          "prefix": "TE | Twitch Extras \ud83d\udcbb",
+          "type": "communicate",
+          "format": "Start Prediction Title:{$gitago.twitchextras.act.prediction.ptitle$} - Choice #1:{$gitago.twitchextras.act.prediction.p1choice$}    Choice #2{$gitago.twitchextras.act.prediction.p2choice$} for {$gitago.twitchextras.act.prediction.ptime$}seconds",
+          "tryInline": true,
+          "data": [
+            {
+              "id": "gitago.twitchextras.act.prediction.ptitle",
+              "type": "text",
+              "label": "Text",
+              "default": "Title"
+            },
+            {
+              "id": "gitago.twitchextras.act.prediction.p1choice",
+              "type": "text",
+              "label": "Prediction 1 Choice",
+              "default": "Enter Prediction 1"
+            },
+            {
+              "id": "gitago.twitchextras.act.prediction.p2choice",
+              "type": "text",
+              "label": "Prediction 2 Choice",
+              "default": "Enter Prediction 2"
+            },
+            {
+              "id": "gitago.twitchextras.act.prediction.ptime",
+              "type": "number",
+              "label": "Meh",
+              "default": "30",
+              "allowDecimals": false,
+              "minValue": 30,
+              "maxValue": 180
+            }
+          ]
+        },
+        {
+          "id": "gitago.twitchextras.act.prediction.cancelprediction",
+          "name": "Predictions: Cancel",
+          "prefix": "TE | Twitch Extras \ud83d\udcbb",
+          "type": "communicate",
+          "format": "Cancel Current Prediction.  ",
+          "tryInline": true,
+          "data": [
+            {
+              "id": "gitago.twitchextras.act.prediction.cancel",
+              "type": "text",
+              "label": "Cancel Prediction",
+              "default": "Title"
+            }
+          ]
+        },
+        {
+          "id": "gitago.twitchextras.act.prediction.pickwinner",
+          "name": "Predictions: Select a Winner",
+          "prefix": "TE | Twitch Extras \ud83d\udcbb",
+          "type": "communicate",
+          "format": "Select {$gitago.twitchextras.act.prediction.choice$} as the winner",
+          "tryInline": true,
+          "data": [
+            {
+              "id": "gitago.twitchextras.act.prediction.choice",
+              "type": "choice",
+              "label": "Prediction Choice",
+              "default": "Title",
+              "valueChoices": [
+                "Choice 1",
+                "Choice 2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gitago.twitchextras.act.poll.start",
+          "name": "Poll: Create a Poll",
+          "prefix": "TE | Twitch Extras \ud83d\udcbb",
+          "type": "communicate",
+          "format": "Create a Poll: Title:{$gitago.twitchextras.act.poll.ptitle$} - Choice #1:{$gitago.twitchextras.act.poll.choice1$}  Choice #2{$gitago.twitchextras.act.poll.choice2$}  Choice #3{$gitago.twitchextras.act.poll.choice3$}  Choice #4{$gitago.twitchextras.act.poll.choice4$}  Choice #5{$gitago.twitchextras.act.poll.choice5$} for {$gitago.twitchextras.act.poll.ptime$}seconds - Extra Vote Cost? {$gitago.twitchextras.act.poll.cpoints$}",
+          "tryInline": true,
+          "data": [
+            {
+              "id": "gitago.twitchextras.act.poll.ptitle",
+              "type": "text",
+              "label": "Text",
+              "default": "Title"
+            },
+            {
+              "id": "gitago.twitchextras.act.poll.choice1",
+              "type": "text",
+              "label": "Poll Choice 1",
+              "default": "Poll Choice 1"
+            },
+            {
+              "id": "gitago.twitchextras.act.poll.choice2",
+              "type": "text",
+              "label": "Poll Choice 2",
+              "default": "Poll Choice 2"
+            },
+            {
+              "id": "gitago.twitchextras.act.poll.choice3",
+              "type": "text",
+              "label": "Poll Choice 3",
+              "default": ""
+            },
+            {
+              "id": "gitago.twitchextras.act.poll.choice4",
+              "type": "text",
+              "label": "Poll Choice 4",
+              "default": ""
+            },
+            {
+              "id": "gitago.twitchextras.act.poll.choice5",
+              "type": "text",
+              "label": "Poll Choice 5",
+              "default": ""
+            },
+            {
+              "id": "gitago.twitchextras.act.poll.ptime",
+              "type": "number",
+              "label": "Poll Duration",
+              "default": "30",
+              "allowDecimals": false,
+              "minValue": 15,
+              "maxValue": 180
+            },
+            {
+              "id": "gitago.twitchextras.act.poll.cpoints",
+              "type": "number",
+              "label": "Channel Points Needed per vote",
+              "default": "0",
+              "allowDecimals": false
+            }
+          ]
+        },
+        {
+          "id": "gitago.twitchextras.act.getuserinfo",
+          "name": "Get User Details",
+          "prefix": "TE | Twitch Extras \ud83d\udcbb",
+          "type": "communicate",
+          "format": "Retrieve Profile Details for {$gitago.twitchextras.act.getuserinfo.name$}",
+          "tryInline": true,
+          "data": [
+            {
+              "id": "gitago.twitchextras.act.getuserinfo.name",
+              "type": "text",
+              "label": "Persons Name",
+              "default": "Twitch Name Here"
+            }
+          ]
+        },
+        {
+          "id": "gitago.twitchextras.act.getuserfolloage",
+          "name": "Get User Follow-Age",
+          "prefix": "TE | Twitch Extras \ud83d\udcbb",
+          "type": "communicate",
+          "format": "Retrieve Follow-Age for {$gitago.twitchextras.act.getuserfollowage.name$}",
+          "tryInline": true,
+          "data": [
+            {
+              "id": "gitago.twitchextras.act.getuserfollowage.name",
+              "type": "text",
+              "label": "Persons Name",
+              "default": "Twitch Name Here"
+            }
+          ]
+        },
+        {
+          "id": "gitago.twitchextras.act.getuserclips",
+          "name": "Get Clips Info",
+          "prefix": "TE | Twitch Extras \ud83d\udcbb",
+          "type": "communicate",
+          "format": "Retrieve Last {$gitago.twitchextras.act.getuserclips.amount$}(3max) Clips for {$gitago.twitchextras.act.getuserclips.name$}",
+          "tryInline": true,
+          "data": [
+            {
+              "id": "gitago.twitchextras.act.getuserclips.amount",
+              "type": "number",
+              "label": "Amount of Clips",
+              "default": "1",
+              "allowDecimals": false,
+              "minValue": 1,
+              "maxValue": 3
+            },
+            {
+              "id": "gitago.twitchextras.act.getuserclips.name",
+              "type": "text",
+              "label": "Persons Name",
+              "default": "Twitch Username Here"
+            }
+          ]
+        },
+        {
+          "id": "gitago.twitchextras.act.createreward",
+          "name": "Create a Custom Reward",
+          "prefix": "TE | Twitch Extras \ud83d\udcbb",
+          "type": "communicate",
+          "format": "{$gitago.twitchextras.act.createreward.title$} cost of {$gitago.twitchextras.act.createreward.cost$} andB G Color {$gitago.twitchextras.act.createreward.color$} User Input Required {$gitago.twitchextras.act.createreward.inputreq$}   Max Per Stream {$gitago.twitchextras.act.createreward.maxperstream$}  Max Per User {$gitago.twitchextras.act.createreward.maxperuser$} - Global Cooldown {$gitago.twitchextras.act.createreward.globalcooldown$}  and Skip Request Queue {$gitago.twitchextras.act.createreward.skipqueue$}",
+          "tryInline": true,
+          "data": [
+            {
+              "id": "gitago.twitchextras.act.createreward.title",
+              "type": "text",
+              "label": "Reward Title",
+              "default": "Title of Reward"
+            },
+            {
+              "id": "gitago.twitchextras.act.createreward.cost",
+              "type": "number",
+              "label": "Reward Cost",
+              "default": "0",
+              "allowDecimals": false
+            },
+            {
+              "id": "gitago.twitchextras.act.createreward.color",
+              "type": "color",
+              "label": "Background Color",
+              "default": "cc3333"
+            },
+            {
+              "id": "gitago.twitchextras.act.createreward.inputreq",
+              "type": "choice",
+              "label": "User Input Check",
+              "default": "False",
+              "valueChoices": [
+                "True",
+                "False"
+              ]
+            },
+            {
+              "id": "gitago.twitchextras.act.createreward.maxperstream",
+              "type": "number",
+              "label": "Max Per Stream Title",
+              "default": "0",
+              "allowDecimals": false
+            },
+            {
+              "id": "gitago.twitchextras.act.createreward.maxperuser",
+              "type": "number",
+              "label": "Max Per User",
+              "default": "0",
+              "allowDecimals": false
+            },
+            {
+              "id": "gitago.twitchextras.act.createreward.globalcooldown",
+              "type": "number",
+              "label": "Global Cooldown Seconds",
+              "default": "0",
+              "allowDecimals": false
+            },
+            {
+              "id": "gitago.twitchextras.act.createreward.skipqueue",
+              "type": "choice",
+              "label": "Skip Queue",
+              "default": "False",
+              "valueChoices": [
+                "True",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gitago.twitchextras.act.retrievechannelrewards",
+          "name": "Retrieve Custom Reward",
+          "prefix": "TE | Twitch Extras \ud83d\udcbb",
+          "type": "communicate",
+          "format": "Retrieve Custom Rewards from Channel (This will Create a State for Each Reward which includes name, cost and ID.",
+          "tryInline": true,
+          "data": [
+            {
+              "id": "gitago.twitchextras.act.retrievechannelrewardsaction",
+              "type": "text",
+              "label": "Retrieve Channel Reward",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "id": "gitago.twitchextras.act.deletereward",
+          "name": "Delete Custom Reward",
+          "prefix": "TE | Twitch Extras \ud83d\udcbb",
+          "type": "communicate",
+          "format": "Delete Custom Reward by ID# {$gitago.twitchextras.act.deletereward.id$}",
+          "tryInline": true,
+          "data": [
+            {
+              "id": "gitago.twitchextras.act.deletereward.id",
+              "type": "text",
+              "label": "Reward ID to delete.",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "id": "gitago.twitchextras.act.calculate_level",
+          "name": "Caclulate Level",
+          "prefix": "TE | Twitch Extras \ud83d\udcbb",
+          "type": "communicate",
+          "format": "Calculate the Level for {$gitago.twitchextras.act.calculatelevel.name$} from the database.",
+          "tryInline": true,
+          "data": [
+            {
+              "id": "gitago.twitchextras.act.calculatelevel.name",
+              "type": "text",
+              "label": "Persons name to Calculate..",
+              "default": "Enter Twitch Name Here"
+            }
+          ]
+        },
+        {
+          "id": "gitago.twitchextras.act.save_chatbadges",
+          "name": "Save Chat Badge Images to File",
+          "prefix": "TE | Twitch Extras \ud83d\udcbb",
+          "type": "communicate",
+          "format": "Save Chat Badge Images to Folder",
+          "tryInline": true,
+          "data": [
+            {
+              "id": "gitago.twitchextras.act.savedabadges",
+              "type": "text",
+              "label": "nullll",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "id": "gitago.twitchextras.act.check_raidlist",
+          "name": "Check Raid List for People",
+          "prefix": "TE | Twitch Extras \ud83d\udcbb",
+          "type": "communicate",
+          "format": "Check Raid List for People",
+          "tryInline": true,
+          "data": [
+            {
+              "id": "gitago.twitchextras.act.raidlist",
+              "type": "text",
+              "label": "nullll",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "id": "gitago.twitchextras.act.automod_action",
+          "name": "Approve or Deny Auto Mod",
+          "prefix": "TE | Twitch Extras \ud83d\udcbb",
+          "type": "communicate",
+          "format": "{$gitago.twitchextras.act.automod.decision$} the current automod action",
+          "tryInline": true,
+          "data": [
+            {
+              "id": "gitago.twitchextras.act.automod.decision",
+              "type": "choice",
+              "label": "approve or deny it",
+              "default": "",
+              "valueChoices": [
+                "Approve",
+                "Deny"
+              ]
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "gitago.twitchextras.state.prediction.title",
+          "type": "text",
+          "desc": "TE | Prediction: Title",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.prediction.ptimeleft",
+          "type": "text",
+          "desc": "TE | Prediction: Time Left",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.prediction.choice1",
+          "type": "text",
+          "desc": "TE | Choice 1: Text",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.prediction.1points",
+          "type": "text",
+          "desc": "TE | Choice 1: Points",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.prediction.1votes",
+          "type": "text",
+          "desc": "TE | Choice 1: Votes",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.prediction.choice2",
+          "type": "text",
+          "desc": "TE | Choice 2: Text",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.prediction.2points",
+          "type": "text",
+          "desc": "TE | Choice 2: Points",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.prediction.2votes",
+          "type": "text",
+          "desc": "TE | Choice 2: Votes",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.prediction.winner",
+          "type": "text",
+          "desc": "TE | Prediction WINNER",
+          "default": ""
+        }
+      ],
+      "events": [
+        {
+          "id": "gitago.twitchextras.state.events.on_follow",
+          "name": "TE | On New Follower",
+          "format": "When Receiving a New Follower: $val....",
+          "type": "communicate",
+          "valueChoices": [
+            "True",
+            "False"
+          ],
+          "valueType": "choice",
+          "valueStateId": "gitago.twitchextras.state.on_follow"
+        },
+        {
+          "id": "gitago.twitchextras.state.events.emotes_only",
+          "name": "TE | When Emotes Only",
+          "format": "When Emotes Only Mode switches to $val....",
+          "type": "communicate",
+          "valueChoices": [
+            "On",
+            "Off"
+          ],
+          "valueType": "choice",
+          "valueStateId": "gitago.twitchextras.state.emotes_only"
+        },
+        {
+          "id": "gitago.twitchextras.state.events.followers_only",
+          "name": "TE | When Followers Only",
+          "format": "When Followers Mode switches to $val....",
+          "type": "communicate",
+          "valueChoices": [
+            "On",
+            "Off"
+          ],
+          "valueType": "choice",
+          "valueStateId": "gitago.twitchextras.state.followers_only"
+        },
+        {
+          "id": "gitago.twitchextras.state.events.subscribers_only",
+          "name": "TE | When Subscribers Only",
+          "format": "When Subscribers Mode switches to $val....",
+          "type": "communicate",
+          "valueChoices": [
+            "On",
+            "Off"
+          ],
+          "valueType": "choice",
+          "valueStateId": "gitago.twitchextras.state.subscribers_only"
+        },
+        {
+          "id": "gitago.twitchextras.state.events.slow_mode",
+          "name": "TE | When Slow Mode",
+          "format": "When Slow Mode switches to $val....",
+          "type": "communicate",
+          "valueChoices": [
+            "On",
+            "Off"
+          ],
+          "valueType": "choice",
+          "valueStateId": "gitago.twitchextras.state.slow_mode"
+        },
+        {
+          "id": "gitago.twitchextras.state.events.poll_status",
+          "name": "TE | When a Poll",
+          "format": "When stream poll switches to $val....",
+          "type": "communicate",
+          "valueChoices": [
+            "ACTIVE",
+            "COMPLETED",
+            "TERMINATED",
+            "UPDATED"
+          ],
+          "valueType": "choice",
+          "valueStateId": "gitago.twitchextras.state.poll.status"
+        },
+        {
+          "id": "gitago.twitchextras.state.events.prediction_status",
+          "name": "TE | When a Prediction",
+          "format": "When Prediction switches to $val....",
+          "type": "communicate",
+          "valueChoices": [
+            "ACTIVE",
+            "RESOLVED",
+            "CANCELED",
+            "LOCKED"
+          ],
+          "valueType": "choice",
+          "valueStateId": "gitago.twitchextras.state.prediction.status"
+        }
+      ]
+    },
+    {
+      "id": "gitago.twitchextras.userinfo",
+      "name": "TE | User-Info",
+      "actions": [],
+      "states": [
+        {
+          "id": "gitago.twitchextras.state.user.imageurl",
+          "type": "text",
+          "desc": "TE | User Image URL",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.user.viewcount",
+          "type": "text",
+          "desc": "TE | User View Count",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.user.followcount",
+          "type": "text",
+          "desc": "TE | User Follow Count",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.user.createdat",
+          "type": "text",
+          "desc": "TE | User Created At",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.user.display_name",
+          "type": "text",
+          "desc": "TE | Display Name",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.user.userid",
+          "type": "text",
+          "desc": "TE | User-ID",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.user.broadcastertype",
+          "type": "text",
+          "desc": "TE | Broadcaster Type",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.user.followage",
+          "type": "text",
+          "desc": "TE | User's Follow Age",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.user.followagemonths",
+          "type": "text",
+          "desc": "TE | User's Follow Age in Months",
+          "default": ""
+        }
+      ],
+      "events": []
+    },
+    {
+      "id": "gitago.twitchextras.clipinfo",
+      "name": "TE | Clip-Info",
+      "actions": [],
+      "states": [
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip1.creatorname",
+          "type": "text",
+          "desc": "TE | Clip 1: Creator Name",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip1.title",
+          "type": "text",
+          "desc": "TE | Clip 1: Title",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip1.url",
+          "type": "text",
+          "desc": "TE | Clip 1: URL",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip1.thumburl",
+          "type": "text",
+          "desc": "TE | Clip 1: Thumb URL",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip1.duration",
+          "type": "text",
+          "desc": "TE | Clip 1: Duration",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip1.views",
+          "type": "text",
+          "desc": "TE | Clip 1: Views",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip2.creatorname",
+          "type": "text",
+          "desc": "TE | Clip 2: Creator Name",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip2.title",
+          "type": "text",
+          "desc": "TE | Clip 2: Title",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip2.url",
+          "type": "text",
+          "desc": "TE | Clip 2: URL",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip2.thumburl",
+          "type": "text",
+          "desc": "TE | Clip 2: Thumb URL",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip2.duration",
+          "type": "text",
+          "desc": "TE | Clip 2: Duration",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip2.views",
+          "type": "text",
+          "desc": "TE | Clip 2: Views",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip3.creatorname",
+          "type": "text",
+          "desc": "TE | Clip 3: Creator Name",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip3.title",
+          "type": "text",
+          "desc": "TE | Clip 3: Title",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip3.url",
+          "type": "text",
+          "desc": "TE | Clip 3: URL",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip3.thumburl",
+          "type": "text",
+          "desc": "TE | Clip 3: Thumb URL",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip3.duration",
+          "type": "text",
+          "desc": "TE | Clip 3: Duration",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.getuserclips.clip3.views",
+          "type": "text",
+          "desc": "TE | Clip 3: Views",
+          "default": ""
+        }
+      ],
+      "events": []
+    },
+    {
+      "id": "gitago.twitchextras.levelcard",
+      "name": "TE | Level Card",
+      "actions": [],
+      "states": [
+        {
+          "id": "gitago.twitchextras.state.levelcard.name",
+          "type": "text",
+          "desc": "TE | LevelCard: Username",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.levelcard.level",
+          "type": "text",
+          "desc": "TE | LevelCard: Current Level",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.levelcard.percentage",
+          "type": "text",
+          "desc": "TE | LevelCard: % To Next Level",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.levelcard.percentage_to_level",
+          "type": "text",
+          "desc": "TE | LevelCard: Level Percentage Complete",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.levelcard.profilepic",
+          "type": "text",
+          "desc": "TE | LevelCard: Profile Picture",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.levelcard.follow_status",
+          "type": "text",
+          "desc": "TE | LevelCard: Follow Status",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.levelcard.vip_status",
+          "type": "text",
+          "desc": "TE | LevelCard: VIP Status",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.levelcard.sub_badge",
+          "type": "text",
+          "desc": "TE | LevelCard: Sub Badge Image URL",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.levelcard.sub_months",
+          "type": "text",
+          "desc": "TE | LevelCard: Total Months Subscribed",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.levelcard.follow_months",
+          "type": "text",
+          "desc": "TE | LevelCard: Total Months Following",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.levelcard.full_follow_age",
+          "type": "text",
+          "desc": "TE | LevelCard: Full Follow Age",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.levelcard.bits_donated",
+          "type": "text",
+          "desc": "TE | LevelCard: Total Bits Donated",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.levelcard.total_messages",
+          "type": "text",
+          "desc": "TE | LevelCard: Total Messages Sent",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.levelcard.total_score",
+          "type": "text",
+          "desc": "TE | LevelCard: Total Calculated Score",
+          "default": ""
+        }
+      ],
+      "events": []
+    },
+    {
+      "id": "gitago.twitchextras.polls",
+      "name": "TE | Poll Details",
+      "actions": [],
+      "states": [
+        {
+          "id": "gitago.twitchextras.state.poll.title",
+          "type": "text",
+          "desc": "TE Poll | Poll Title",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.id",
+          "type": "text",
+          "desc": "TE Poll | Poll ID",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.status",
+          "type": "text",
+          "desc": "TE Poll | Status",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.createdby",
+          "type": "text",
+          "desc": "TE Poll | Created By",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.total_voters_all",
+          "type": "text",
+          "desc": "TE Poll | Total Voters Combined",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.total_cp_votes",
+          "type": "text",
+          "desc": "TE Poll | Total CP Votes Combined",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.total_bit_votes",
+          "type": "text",
+          "desc": "TE Poll | Total Bit Votes Combined",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.total_bit_spent",
+          "type": "text",
+          "desc": "TE Poll | Total Bits Spent",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.total_cp_spent",
+          "type": "text",
+          "desc": "TE Poll | Total CP Spent",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.top_contributor",
+          "type": "text",
+          "desc": "TE Poll | Top Contributor",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.top_cp_contributor",
+          "type": "text",
+          "desc": "TE Poll | Top CP Contributor",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.top_bits_contributor",
+          "type": "text",
+          "desc": "TE Poll | Top Bits Contributor",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.spacer",
+          "type": "text",
+          "desc": "----- \u2b07 Poll Details \u2b07 -----",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.title_1",
+          "type": "text",
+          "desc": "TE Poll | Choice 1 Title",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.votes_1",
+          "type": "text",
+          "desc": "TE Poll | Choice 1 Votes",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.percent_Choice1",
+          "type": "text",
+          "desc": "TE Poll | Choice 1 Percentage",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.bitvotes_1",
+          "type": "text",
+          "desc": "TE Poll | Choice 1 Bit Votes",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.cpvotes_1",
+          "type": "text",
+          "desc": "TE Poll | Choice 1 CP Votes",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.title_2",
+          "type": "text",
+          "desc": "TE Poll | Choice 2 Title",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.votes_2",
+          "type": "text",
+          "desc": "TE Poll | Choice 2 Votes",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.percent_Choice2",
+          "type": "text",
+          "desc": "TE Poll | Choice 2 Percentage",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.bitvotes_2",
+          "type": "text",
+          "desc": "TE Poll | Choice 2 Bit Votes",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.cpvotes_2",
+          "type": "text",
+          "desc": "TE Poll | Choice 2 CP Votes",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.title_3",
+          "type": "text",
+          "desc": "TE Poll | Choice 3 Title",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.votes_3",
+          "type": "text",
+          "desc": "TE Poll | Choice 3 Votes",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.percent_Choice3",
+          "type": "text",
+          "desc": "TE Poll | Choice 3 Percentage",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.bitvotes_3",
+          "type": "text",
+          "desc": "TE Poll | Choice 3 Bit Votes",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.cpvotes_3",
+          "type": "text",
+          "desc": "TE Poll | Choice 3 CP Votes",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.title_4",
+          "type": "text",
+          "desc": "TE Poll | Choice 4 Title",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.votes_4",
+          "type": "text",
+          "desc": "TE Poll | Choice 4 Votes",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.percent_Choice4",
+          "type": "text",
+          "desc": "TE Poll | Choice 4 Percentage",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.bitvotes_4",
+          "type": "text",
+          "desc": "TE Poll | Choice 4 Bit Votes",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.cpvotes_4",
+          "type": "text",
+          "desc": "TE Poll | Choice 4 CP Votes",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.title_5",
+          "type": "text",
+          "desc": "TE Poll | Choice 5 Title",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.votes_5",
+          "type": "text",
+          "desc": "TE Poll | Choice 5 Total Votes",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.percent_Choice5",
+          "type": "text",
+          "desc": "TE Poll | Choice 5 Percentage",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.bitvotes_5",
+          "type": "text",
+          "desc": "TE Poll | Choice 5 Bit Votes",
+          "default": "0"
+        },
+        {
+          "id": "gitago.twitchextras.state.poll.cpvotes_5",
+          "type": "text",
+          "desc": "TE Poll | Choice 5 CP Votes",
+          "default": "0"
+        }
+      ],
+      "events": []
+    },
+    {
+      "id": "gitago.twitchextras.raidlist",
+      "name": "TE | Raid List States",
+      "actions": [],
+      "states": [],
+      "events": []
+    },
+    {
+      "id": "gitago.twitchextras.whispers",
+      "name": "TE | Whispers / Direct Messages",
+      "actions": [],
+      "states": [
+        {
+          "id": "gitago.twitchextras.state.whisper1.timestamp",
+          "type": "text",
+          "desc": "TE | Whisper: Timestamp",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.whisper1.username",
+          "type": "text",
+          "desc": "TE | Whisper: Username",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.whisper1.message",
+          "type": "text",
+          "desc": "TE | Whisper: Message Body",
+          "default": ""
+        }
+      ],
+      "events": []
+    },
+    {
+      "id": "gitago.twitchextras.automod",
+      "name": "TE | AutoMod States",
+      "actions": [],
+      "states": [
+        {
+          "id": "gitago.twitchextras.state.automod.case_offender",
+          "type": "text",
+          "desc": "TE | Automod Offender",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.automod.case_word",
+          "type": "text",
+          "desc": "TE | Automod Word",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.automod.case_fullmessage",
+          "type": "text",
+          "desc": "TE | Automod Full Message",
+          "default": ""
+        },
+        {
+          "id": "gitago.twitchextras.state.automod.case_count",
+          "type": "text",
+          "desc": "TE | Automod Case Count",
+          "default": ""
+        }
+      ],
+      "events": []
+    },
+    {
+      "id": "gitago.twitchextras.channel_reward_state",
+      "name": "TE | Channel Reward States",
+      "actions": [],
+      "states": [],
+      "events": []
+    }
+  ],
+  "settings": [
+    {
+      "name": "Twitch Username",
+      "type": "text",
+      "default": "",
+      "readOnly": false
+    },
+    {
+      "name": "Chatbot Username",
+      "type": "text",
+      "default": "",
+      "readOnly": false
+    },
+    {
+      "name": "Chatbot OAUTH Token",
+      "type": "text",
+      "default": "",
+      "readOnly": false
+    }
+  ]
+}
