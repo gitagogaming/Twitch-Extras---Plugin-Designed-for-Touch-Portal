@@ -24,7 +24,7 @@ print("CHATBOT IMPORTED???")
 
 CHATBOT_NAME = full_config.config['Chatbot']['Chatbot Name']
 ACCESS_TOKEN = full_config.config['Chatbot']['Chatbot Token']
-CLIENT_SECRET = "gp762nuuoqcoxypju8c569th9wz7q5"  ### Not needed for Chatbot yet 
+CLIENT_SECRET = "gp762nTHE SECRET 569th9wz7q5"  ### Not needed for Chatbot yet 
 
 ##   message.author.   - is_mod   or just _mod  -  is_turbo   -  is_subscriber   -  prediction   -   colour  -  display_name   -  badges  -  name - id
    
