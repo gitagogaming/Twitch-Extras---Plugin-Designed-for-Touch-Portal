@@ -36,7 +36,10 @@ from user_database import enter_user_dict    ### This is conflicting with user_d
 
 
 
-#### ------------ LOAD CONFIG FILE, CHECK IF TOKEN IS VALID ------------------ #####
+#### ------------ LOAD CONFIG FILE, CHECK IF 
+
+
+IS VALID ------------------ #####
 #### ------------ LOAD CONFIG FILE, CHECK IF TOKEN IS VALID ------------------ #####
 
 try:
@@ -60,12 +63,10 @@ except (FileNotFoundError, IOError):
 debug = True
 
 ### UNOFFICIAL KEYS
-app_key = "ha89ay852t36f8b8lngswtfythbsip"
-app_secret = "4iy2rl0ohyh0p9i0v2q50s92uesdv0"
+app_key = "ha89swtfythbsip"
+app_secret = "4iy0"
 
-### OFFICIAL KEYS
-#app_key = "5o4jstm970sdkn1gjgovig8q30v42r"
-#app_secret = "x1t3xyledr3ibsv2aacvqfuvs8uw3c"
+
 twitch = Twitch(app_key, app_secret)
 
 #### This is what sets the API connection for everything, so this would be the actual "broadcaster/streamer using the plugin"
