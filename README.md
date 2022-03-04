@@ -1,40 +1,42 @@
 # Twitch-Extras---Plugin-Designed-for-Touch-Portal
-Predictions, Polls, On Follow Event, First Time chatter Event,  Create/Edit Channel Point Rewards, Approve and Deny AutoMOD cases, retrieve whispers and quite a bit more
 
 Please keep in mind this plugin is still in development and may have some bugs that still need worked out.  
 Please feel free to submit any ideas or issues you may find via the Touch Portal Discord
 
 Here is a starter list of the things this plugin is capable of currently. 
 
+**Select Device -> Do Action**
+| Action |  Description 
+| ------------- | ------------- 
+| Get User Details  | FULL User Info
+| Check Raid List  | Create State for Raidable
+| Create Poll  | Title - > Choices - > Time -> Cost 
+| End Poll  | End/Cancel Poll  
+| Create Prediction | 
+| End Prediction | 
+| Automod Queue |
+| Automod Approve / Deny |
+| Get Custom Channel Reward Details |
+| Create Custom Channel Rewards | 
+| Get Last 3 Clips | Retrieve Last 3 Clips from selected channel
+| User Level Card System | 
+| Track Chat Message Count per Viewer | 
 
-Actions:
-Get User Details 
-Check List for Who to Raid 
+---
 
-Create Poll 
-End Poll  
-Create Prediction 
-End Prediction  
-Automod Case Approve 
-Autmod Case Deny  
-Get Custom Channel Rewards   
-Create Custom Channel Rewards  
-Get last (3) channel clips with full details  
-Level Card  + Database 
-Receive Whispers  
-Find Who is online to Raid from List  
+** PLUG-IN EVENTS **
+| Event |  Description 
+| ------------- | ------------- 
+| First Time Chatter | When First Time Chatter
+| Followers Only  | When Followers-Only Mode On/Off
+| Emote Only   | When Emote-Only On/Off
+| Subscribers Only   | When Subscribers-only is On/Off
+| Slow Mode    | When Slow-Mode is On/Off
+| On Poll Event    | When Poll Started / Ending
+| On Predicition Event   | When Predicition Started / Ending
 
-EVENTS:
-New Follower Event  
-Followers Only Event   
-Emote Only Event   
-Subscribers Only Event   
-Slow Mode Event   
-New Follower Event
-On Poll Event (Starting/Ending)  
-On Predicition Event (Starting/Ending 
-On First Time Ever Chatter 
-On New Whisper -- ❌ ##Use When Plugin State TE | Whisper Timpestamp changes
+
+-- COMING SOON
 On New Automod Case ❌ - need to test. - prob just use plugin state
 HypeTrain Events ❌ - need a tester
 
