@@ -38,6 +38,7 @@ Here is a starter list of the things this plugin is capable of currently.
 
 
 -- COMING SOON / IDEAS
+Profile Pic to Icon (Implemented for level card action)
 Gift Bomb Event ? 
 Pick Random Active Chatter ? 
 On New Automod Case ❌
