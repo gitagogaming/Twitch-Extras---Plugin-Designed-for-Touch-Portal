@@ -1,1 +1,3 @@
-Starter Notes
+- Added Automatic Update Check
+- Fixed Chatbot connecting to wrong channel
+- Added in 'Icon State' for User Image(level card)
