@@ -25,7 +25,7 @@ Here is a starter list of the things this plugin is capable of currently.
 
 ---
 
-** PLUG-IN EVENTS **
+**PLUG-IN EVENTS**
 | Event |  Description 
 | ------------- | ------------- 
 | First Time Chatter | When First Time Chatter
@@ -37,7 +37,7 @@ Here is a starter list of the things this plugin is capable of currently.
 | On Predicition Event   | When Predicition Started / Ending
 
 ---
-** PLUGIN STATES **
+**PLUGIN STATES**
 ![image](https://user-images.githubusercontent.com/76603653/156728175-f8ef13f3-2e62-495a-b7d3-6351d23dcf4e.png)
 
 
