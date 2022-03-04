@@ -14,8 +14,7 @@ Here is a starter list of the things this plugin is capable of currently.
 | End Poll  | End/Cancel Poll  
 | Create Prediction | 
 | End Prediction | 
-| Automod Queue |
-| Automod Approve / Deny |
+| Automod Queue Approve / Deny |  If automod queues something for approval
 | Get Custom Channel Reward Details |
 | Create Custom Channel Rewards | 
 | Get Last 3 Clips | Retrieve Last 3 Clips from selected channel
