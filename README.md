@@ -36,7 +36,12 @@ Here is a starter list of the things this plugin is capable of currently.
 | On Poll Event    | When Poll Started / Ending
 | On Predicition Event   | When Predicition Started / Ending
 
+---
+** PLUGIN STATES **
+![image](https://user-images.githubusercontent.com/76603653/156728175-f8ef13f3-2e62-495a-b7d3-6351d23dcf4e.png)
 
+
+---
 -- COMING SOON / IDEAS
 Profile Pic to Icon (Implemented for level card action)
 Gift Bomb Event ? 
@@ -49,5 +54,4 @@ OTHERS:
 Constant Updating Online Moderator List (1 minutes) 
 
 ![image](https://user-images.githubusercontent.com/76603653/156722490-dc0fa7dd-ec86-44d2-8c0a-8c43915377de.png)
-![image](https://user-images.githubusercontent.com/76603653/156728175-f8ef13f3-2e62-495a-b7d3-6351d23dcf4e.png)
 
