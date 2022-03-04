@@ -37,11 +37,12 @@ Here is a starter list of the things this plugin is capable of currently.
 | On Predicition Event   | When Predicition Started / Ending
 
 
--- COMING SOON
+-- COMING SOON / IDEAS
 Gift Bomb Event ? 
 Pick Random Active Chatter ? 
 On New Automod Case ❌
 HypeTrain Events ❌ - need a tester
+Custom !commands and secondary Twitch Chatbot Account to Respond to them
 
 OTHERS:
 Constant Updating Online Moderator List (1 minutes) 
