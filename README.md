@@ -49,5 +49,5 @@ OTHERS:
 Constant Updating Online Moderator List (1 minutes) 
 
 ![image](https://user-images.githubusercontent.com/76603653/156722490-dc0fa7dd-ec86-44d2-8c0a-8c43915377de.png)
-![image](https://user-images.githubusercontent.com/76603653/156727874-c3c8a0c2-c490-4f31-85b4-07ae6d9549af.png)
+![image](https://user-images.githubusercontent.com/76603653/156728065-d132943c-3496-4b83-8027-a5a80a21ade5.png)
 
