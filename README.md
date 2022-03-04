@@ -10,7 +10,7 @@ Here is a starter list of the things this plugin is capable of currently.
 | ------------- | ------------- 
 | Get User Details  | FULL User Info
 | Check Raid List  | Create State for Raidable
-| Create Poll  | Title - > Choices - > Time -> Cost 
+| Create Poll  | Title -> Choices -> Time -> Cost 
 | End Poll  | End/Cancel Poll  
 | Create Prediction | Title -> Choice 1 -> Choice 2 -> Time
 | End Prediction | Cancel/End Predicition
