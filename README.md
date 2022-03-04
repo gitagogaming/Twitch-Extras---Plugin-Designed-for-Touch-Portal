@@ -12,11 +12,13 @@ Here is a starter list of the things this plugin is capable of currently.
 | Check Raid List  | Create State for Raidable
 | Create Poll  | Title - > Choices - > Time -> Cost 
 | End Poll  | End/Cancel Poll  
-| Create Prediction | 
-| End Prediction | 
+| Create Prediction | Title -> Choice 1 -> Choice 2 -> Time
+| End Prediction | Cancel/End Predicition
+| Pick Prediction Winner | Select Choice 1 / Choice 2 as winner
 | Automod Queue Approve / Deny |  If automod queues something for approval
-| Get Custom Channel Reward Details |
-| Create Custom Channel Rewards | 
+| Get Custom Channel Reward Details | Get States with Reward Details
+| Create Custom Channel Rewards | Create Custom Channel Rewards as needed
+| Delete Custom Channel Rewards | Delete Custom Channel Rewards as needed
 | Get Last 3 Clips | Retrieve Last 3 Clips from selected channel
 | User Level Card System | 
 | Track Chat Message Count per Viewer | 
