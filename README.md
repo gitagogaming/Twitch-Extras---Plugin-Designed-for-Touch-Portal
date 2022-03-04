@@ -38,7 +38,9 @@ Here is a starter list of the things this plugin is capable of currently.
 
 
 -- COMING SOON
-On New Automod Case ❌ - need to test. - prob just use plugin state
+Gift Bomb Event ? 
+Pick Random Active Chatter ? 
+On New Automod Case ❌
 HypeTrain Events ❌ - need a tester
 
 OTHERS:
