@@ -1,5 +1,16 @@
 # Twitch-Extras---Plugin-Designed-for-Touch-Portal
 
+
+## Installation Instructions
+1) Download Twitch_Extras.TPP from releases
+2) Install plugin via TouchPortal settings
+3) Visit this link to get Chat OATH token required: https://twitchapps.com/tmi/ 
+4) Access Plugin Settings and add your Twitch Username, Chatbot Username and Auth Token
+Your Chatbot username can be the same as your twitch username... in the future you will be able to send messages to your chat with a 'bot account'
+![image](https://user-images.githubusercontent.com/76603653/179362576-0a52ab4e-3c6a-415b-ad82-175710aa03e4.png)
+
+
+<br><br>
 Please keep in mind this plugin is still in development and may have some bugs that still need worked out.  
 Please feel free to submit any ideas or issues you may find via the Touch Portal Discord
 
