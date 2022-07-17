@@ -1,3 +1,3 @@
+- Added Get / Set Stream Tags
 - Stability Fixes
-- Fixed Polls not working properly
-- Various other fixes
+- ETC
