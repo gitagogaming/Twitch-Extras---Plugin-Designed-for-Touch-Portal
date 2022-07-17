@@ -20,6 +20,7 @@ Here is a starter list of the things this plugin is capable of currently.
 **Select Device -> Do Action**
 | Action |  Description 
 | ------------- | ------------- 
+| Approve/Deny Auto Mod | When Automod triggers, Approve or Deny
 | Get User Details  | FULL User Info
 | Check Raid List  | Create State for Raidable
 | Create Poll  | Title -> Choices -> Time -> Cost 
@@ -56,14 +57,8 @@ Here is a starter list of the things this plugin is capable of currently.
 ---
 #  COMING SOON / IDEAS
 Profile Pic to Icon (Implemented for level card action)
-Gift Bomb Event ? 
-Pick Random Active Chatter ? 
-On New Automod Case ❌
 HypeTrain Events ❌ - need a tester
 Custom !commands and secondary Twitch Chatbot Account to Respond to them
-
-OTHERS:
-Constant Updating Online Moderator List (1 minutes) 
 
 ![image](https://user-images.githubusercontent.com/76603653/156722490-dc0fa7dd-ec86-44d2-8c0a-8c43915377de.png)
 
