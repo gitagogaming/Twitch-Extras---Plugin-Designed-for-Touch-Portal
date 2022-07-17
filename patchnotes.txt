@@ -1,3 +1,5 @@
-- Added Get / Set Stream Tags
+- Added Get Stream Tags
+- Added Change Stream Tags
+- Added Get Creator Goals
 - Stability Fixes
 - ETC
