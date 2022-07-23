@@ -1,5 +1,5 @@
-- Added Get Stream Tags
-- Added Change Stream Tags
-- Added Get Creator Goals
-- Stability Fixes
-- ETC
+- Added Total Rewards
+- Fixed End Poll, Get Rewards and Create Rewards
+- Predictions can now up to 10 total
+- Delete and Edit a Channel Reward by name
+ + More
