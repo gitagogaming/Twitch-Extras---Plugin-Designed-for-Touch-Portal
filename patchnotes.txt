@@ -1,5 +1,3 @@
-- Added Total Rewards
-- Fixed End Poll, Get Rewards and Create Rewards
-- Predictions can now up to 10 total
-- Delete and Edit a Channel Reward by name
- + More
+- Fixed Shutdown/Startup Issues
+- Added in Change Room State
+- Please download A.S.A.P
