@@ -23,8 +23,8 @@ Please feel free to submit any ideas or issues you may find via the Touch Portal
 
 <br><br>
 # Actions
-Here is a starter list of the things this plugin is capable of currently. 
-![image](https://user-images.githubusercontent.com/76603653/156722490-dc0fa7dd-ec86-44d2-8c0a-8c43915377de.png)
+Here is a starter list of the things this plugin is capable of currently. <br>
+![image](https://user-images.githubusercontent.com/76603653/156722490-dc0fa7dd-ec86-44d2-8c0a-8c43915377de.png)<br>
 
 **Select Device -> Do Action**
 | Action |  Description 
