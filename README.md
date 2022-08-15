@@ -2,18 +2,25 @@
 
 
 ## Installation Instructions
+<img align="right" width="500" height="500" src="https://user-images.githubusercontent.com/76603653/179362576-0a52ab4e-3c6a-415b-ad82-175710aa03e4.png">The Plugin Details</img>
 1) Download `Twitch_Extras.TPP` from releases
-2) Install plugin via TouchPortal settings
-3) Visit this link to get the required Chat OAUTH token: https://twitchapps.com/tmi/ 
-4) Access Plugin Settings and add your Twitch Username, Chatbot Username and OAUTH Token - Your Chatbot username may be the same as your twitch username.
-5) Currently you MAY need to reboot TouchPortal multiple times for all features to work properly when you first install the plugin in order for settings to sync<br>
-![image](https://user-images.githubusercontent.com/76603653/179362576-0a52ab4e-3c6a-415b-ad82-175710aa03e4.png)
+2) Install plugin via TouchPortal settings<br>
+![image](https://user-images.githubusercontent.com/76603653/184730072-53bcc76f-c6e3-4d90-9246-e6165c7e0652.png)
+
+4) Visit this link to get the required Chat OAUTH token: https://twitchapps.com/tmi/ 
+5) Access Plugin Settings and add your Twitch Username, Chatbot Username and OAUTH Token<br>
+Your Chatbot username may be the same as your twitch username.<br>
+7) Currently you MAY need to reboot TouchPortal multiple times for all features to work properly when you first install the plugin in order for settings to sync<br>
+
 
 
 <br><br>
+## ATTENTION
 Please keep in mind this plugin is still in development and may have some bugs that still need worked out.  
 Please feel free to submit any ideas or issues you may find via the Touch Portal Discord
 
+<br><br>
+# Actions
 Here is a starter list of the things this plugin is capable of currently. 
 
 **Select Device -> Do Action**
