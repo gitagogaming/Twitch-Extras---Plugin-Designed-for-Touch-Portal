@@ -24,6 +24,7 @@ Please feel free to submit any ideas or issues you may find via the Touch Portal
 <br><br>
 # Actions
 Here is a starter list of the things this plugin is capable of currently. 
+![image](https://user-images.githubusercontent.com/76603653/156722490-dc0fa7dd-ec86-44d2-8c0a-8c43915377de.png)
 
 **Select Device -> Do Action**
 | Action |  Description 
@@ -68,5 +69,5 @@ Profile Pic to Icon (Implemented for level card action)
 HypeTrain Events ❌ - need a tester
 Custom !commands and secondary Twitch Chatbot Account to Respond to them
 
-![image](https://user-images.githubusercontent.com/76603653/156722490-dc0fa7dd-ec86-44d2-8c0a-8c43915377de.png)
+
 
