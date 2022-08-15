@@ -11,7 +11,8 @@
 5) Access Plugin Settings inside of TouchPortal options<br>
 6) Add your Twitch Username, Chatbot Username and OAUTH Token<br>
 Your Chatbot username may be the same as your twitch username.<br>
-7) Currently you MAY need to reboot TouchPortal multiple times for all features to work properly when you first install the plugin in order for settings to sync<br>
+7) You may need to reboot TouchPortal more than one time for all features to work properly when you first install the plugin in order for settings to sync<br>
+8) Please report any issues / bugs or ideas!
 
 
 
