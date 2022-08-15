@@ -2,7 +2,7 @@
 
 
 ## Installation Instructions
-<img align="right" width="500" height="500" src="https://user-images.githubusercontent.com/76603653/179362576-0a52ab4e-3c6a-415b-ad82-175710aa03e4.png">The Plugin Details</img>
+<img align="right" width="500" height="500" src="https://user-images.githubusercontent.com/76603653/179362576-0a52ab4e-3c6a-415b-ad82-175710aa03e4.png">How to Install</img>
 1) Download `Twitch_Extras.TPP` from releases
 2) Install plugin via TouchPortal settings<br>
 ![image](https://user-images.githubusercontent.com/76603653/184730072-53bcc76f-c6e3-4d90-9246-e6165c7e0652.png)
