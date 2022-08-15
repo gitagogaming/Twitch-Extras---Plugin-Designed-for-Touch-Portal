@@ -8,7 +8,8 @@
 ![image](https://user-images.githubusercontent.com/76603653/184730072-53bcc76f-c6e3-4d90-9246-e6165c7e0652.png)
 
 4) Visit this link to get the required Chat OAUTH token: https://twitchapps.com/tmi/ 
-5) Access Plugin Settings and add your Twitch Username, Chatbot Username and OAUTH Token<br>
+5) Access Plugin Settings inside of TouchPortal options<br>
+6) Add your Twitch Username, Chatbot Username and OAUTH Token<br>
 Your Chatbot username may be the same as your twitch username.<br>
 7) Currently you MAY need to reboot TouchPortal multiple times for all features to work properly when you first install the plugin in order for settings to sync<br>
 
