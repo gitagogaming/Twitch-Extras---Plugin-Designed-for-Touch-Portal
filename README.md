@@ -2,9 +2,9 @@
 
 
 ## Installation Instructions
-1) Download Twitch_Extras.TPP from releases
+1) Download `Twitch_Extras.TPP` from releases
 2) Install plugin via TouchPortal settings
-3) Visit this link to get Chat OAUTH token required: https://twitchapps.com/tmi/ 
+3) Visit this link to get the required Chat OAUTH token: https://twitchapps.com/tmi/ 
 4) Access Plugin Settings and add your Twitch Username, Chatbot Username and OAUTH Token - Your Chatbot username may be the same as your twitch username.
 5) Currently you MAY need to reboot TouchPortal multiple times for all features to work properly when you first install the plugin in order for settings to sync<br>
 ![image](https://user-images.githubusercontent.com/76603653/179362576-0a52ab4e-3c6a-415b-ad82-175710aa03e4.png)
