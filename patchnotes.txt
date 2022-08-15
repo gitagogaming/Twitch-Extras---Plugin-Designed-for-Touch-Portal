@@ -1,4 +1,4 @@
-Newest Update:
+V1.1.4 Update:
 
 # NEW ACTION
 Get last [X] Subscribers
@@ -6,7 +6,8 @@ Get last [X] Subscribers
 # BUG FIXES
 Fixed issue when updating a reward and it setting is_user_input_required improperly
 
-Previous Versions:
+
+V1.13 Update(OLD):
 - Fixed Shutdown/Startup Issues
 - Added Change Room State
 - Please download A.S.A.P
