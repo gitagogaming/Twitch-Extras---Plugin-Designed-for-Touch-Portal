@@ -1,4 +1,4 @@
-# Twitch-Extras---Plugin-Designed-for-Touch-Portal
+# Twitch Extras Plugin  -  Designed for Touch Portal
 
 
 ## Installation Instructions
