@@ -1,13 +1,5 @@
-V1.1.4 Update:
-
-# NEW ACTION
-Get last [X] Subscribers
-
-# BUG FIXES
-Fixed issue when updating a reward and it setting is_user_input_required improperly
-
-
-V1.13 Update(OLD):
-- Fixed Shutdown/Startup Issues
-- Added Change Room State
-- Please download A.S.A.P
+V1.1.6 Update:
+Fixed Create Rewards action not showing proper color by default
+`.state.getuserclips.clip1.duration ` is now a rounded value and no longer a float.
+Fixed Plugin update check notice
+Some internal changes to help plugin run a little "quicker"
